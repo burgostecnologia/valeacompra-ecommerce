@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+</head>
+<body>
+    <div class="custom-shape-divider-bottom-1675181806">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <!-- <h1 class="animate__bounceIn">teste</h1> -->
+    <h1 class="meutexto animate__bounceIn">VAMOS LA ANIMACAO</h1>
+    <button data-text="Awesome" class="button">
+        <span class="actual-text">&nbsp;uiverse&nbsp;</span>
+        <span class="hover-text" aria-hidden="true">&nbsp;uiverse&nbsp;</span>
+    </button>
+    <button class="btn">
+      PLAY
+    </button>
+</body>
+<style>
+.btn {
+  padding: 0.5em 2em 0.5em 2.5em;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 15px;
+  color: #fff6fb;
+  letter-spacing: 0.3em;
+  text-shadow: -2px 2px 5px #FD3084;
+  background-color: transparent;
+  border: 2px solid #FEB1DE;
+  box-shadow: 0 0 0px 1px #F11271,
+    0 0 10px 2px #FD3084,
+    inset 0 0 0px 1px #F11271,
+    inset 0 0 10px 2px #FD3084;
+  transition: 100ms;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0px 1px #F11271,
+    0 0 10px 2px #FD3084,
+    inset 0 0 0px 1px #F11271,
+    inset 0 0 30px 2px #FD3084;
+  text-shadow: 0 0 10px #FD3084;
+  transform: translateY(-5px);
+}
+
+.btn:active {
+  box-shadow: 0 0 0px 1px #F11271,
+    0 0 25px 2px #FD3084,
+    inset 0 0 0px 1px #F11271,
+    inset 0 0 30px 2px #FD3084;
+  transform: translateY(1px);
+}
+
+.meutexto {
+    color: #FFFFFF;
+    font-size: 40px;
+}
+.custom-shape-divider-bottom-1675181806 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1675181806 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1675181806 .shape-fill {
+    fill: #FFFFFF;
+}
+body{
+       background: #000000 
+}
+
+
+h1{
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);    
+}
+
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+</style>
+</html>

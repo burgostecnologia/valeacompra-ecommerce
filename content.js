@@ -13,6 +13,13 @@ function dynamicClothingSection(ob) {
   boxLink.href = ob.description;
   // console.log('link=>' + boxLink);
 
+
+  //let imgDiv = document.createElement("div");
+  //imgDiv.id = "imgdiv";
+  //let imgafiliado = document.createElement("img");
+  //imgafiliado.src = './img/aliexpresst.png';
+
+
   let imgTag = document.createElement("img");
   // imgTag.id = 'image1'
   // imgTag.id = ob.photos
@@ -33,12 +40,20 @@ function dynamicClothingSection(ob) {
   let h2Text = document.createTextNode("R$  " + ob.price);
   h2.appendChild(h2Text);
 
+  //let afiDiv = document.createElement("div");
+  //imgDiv.id = "img";
+
+  //let imgafiliado = document.createElement("img");
+  //imgafiliado.src = './img/aliexpress.png';
+
   boxDiv.appendChild(boxLink);
   boxLink.appendChild(imgTag);
+  //boxLink.appendChild(imgafiliado);
   boxLink.appendChild(detailsDiv);
   detailsDiv.appendChild(h3);
   detailsDiv.appendChild(h4);
   detailsDiv.appendChild(h2);
+  //imgDiv.appendChild(imgafiliado);
 
   return boxDiv;
 }
